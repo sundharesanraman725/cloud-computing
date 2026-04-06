@@ -1,0 +1,56 @@
+Traditional IT Deployment Models 
+	• On Prem 
+	• Colocation
+
+On Prem : 
+	• All equipment is located in your building
+	• All equipment is owned by you 
+	• Everything in the building is your responsibility and the connection between offices are your network service provider responsibility
+	• Your equipment  is a Capital Expenditure cost
+	• New equipment will typically take over a week to deploy
+	• Equipment requires technology refreshes
+	• You need to consider redundancy
+	
+	• Data Center Tiers
+		○ Tier 1
+			§ 99.671% Availability
+			§ Annual downtime - 28.8 hours
+		○ Tier 2
+			§ 99.749% Availability
+			§ Annual downtime - 22 hours
+			§ One path of power and cooling
+			§ Some redundancy in power
+		○ Tier 3
+			§ 99.982% Availability
+			§ Annual downtime - 1.6 hours
+			§ Multi power and cooling paths
+			§ Fault tolerant (N+1)
+			§ Need 4 generators
+			§ Sustains 72 hours power outage
+		○ Tier 4
+			§ 99.995% Availability
+			§ Annual downtime - .04 hours
+
+Colocation :
+
+	• A colocation center is a data center location where the owner of the facility rents out space to external customers
+	• The facility owner provides power, cooling and physical security for their customer servers, storage and networking equipment
+	• Independent colo providers such as Equinix offer customers multiple network connectivity options through a choice of network service provider
+	• Network service providers will also typically peer with each other in colo facilities
+	• Your server infrastructure is located in the external colo building
+	• Your user desktops will still be in your offices
+	• The colo provider owns the data center facilities and is responsible for providing highly available power, cooling and physical security according to the terms of the SLA
+	• You own your own server , storage and networking equipment within the colo facility
+	• The connection between your offices and the colo are your network service providers responsibility.
+	• Your equipment within the colo facility is a Capital Expenditure cost
+	• The monthly colo hosting fees are an Operational Expenditure
+	• New equipment will typically take over a week to deploy
+	• Equipment requires technology refreshes
+	• You need to consider redundancy for the hardware you own, but power and cooling is handled by facility
+
+Server Virtualization
+ 
+	• It is one of the main enablers of the cloud computing
+	• It allows for resource pooling where multiple customer share the underlying server hardware
+	• It has been around a lot longer than CC
+    

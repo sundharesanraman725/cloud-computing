@@ -53,4 +53,22 @@ Server Virtualization
 	• It is one of the main enablers of the cloud computing
 	• It allows for resource pooling where multiple customer share the underlying server hardware
 	• It has been around a lot longer than CC
+	• Hypervisor
+		○ Acts a os of physical server
+		○ Two types 
+			§ Type 1 (Bare Metal) hypervisor
+				□ Vmware ESXi
+				□ Microsoft Hyper-V
+				□ Red Hat KVM
+				□ Oracle VM Server
+				□ Citrix Xen Server
+				□ Directly on the top of hardware
+			§ Type 2
+				□ Run on top of a host operating system
+				□ Vmware workstation, player and fusion
+				□ Virtual Box
+				□ QEMU
+				□ Parallels
+	
+
     

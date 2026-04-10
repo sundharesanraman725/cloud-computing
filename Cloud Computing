@@ -69,6 +69,145 @@ Server Virtualization
 				□ Virtual Box
 				□ QEMU
 				□ Parallels
-	
 
-    
+Cloud Computing 
+	
+	• On demand availability of computing resources such as storage, infrastructure, servers and software over the internet with pay as you go pricing 
+	• Essential Characteristics
+		○ On Demand Self service 
+			§ A consumer can unilaterally provision computing capabilities such as server time and network storage as needed automatically without requiring human interaction with each service provider
+			§ Big advance of cloud computing 
+		○ Rapid Elasticity
+			§ The capabilities can be elastically provisioned and released, in some cases automatically to scale rapidly outward and inward commensurate with demand
+			§ To the consumer the capabilities available for provisioning often appear to be unlimited and can be appropriated in any quantity at any time 
+			§ Servers can be quickly provisioned and decommissioned based on current demand 
+			§ Elasticity allows customers to achieve cost savings and is often a core justification for adaption
+			§ Ex : If  10 servers are required for a 3 month project the company can provision them within minute, pay a small monthly operational expenditure to run them rather than  a large upfront Capital Expenditure cost and decommission them at the end of the 3 months
+		○ Broad Network Access 
+			§ Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms eg: mobile, tablet, laptops and workstation
+		○ Resource Pooling
+			§ The provider's computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned according to demand.
+		○ Measured Service
+			§ Cloud systems automatically control and optimize resource use by leveraging a metering capability (e.g., storage, processing, bandwidth). Usage can be monitored, controlled, and reported, providing transparency for providers and consumers.
+			§ Bill will typically be monthly and is and operational expenditure cost from the customer viewpoint
+			§ The choice of pay as you go or fixed monthly plans is often available
+			§ Exactly  what is billed depends on what service model is being used - Iaas, Paas or Saas
+	• Cloud Service Model
+		○ Iaas 
+		○ Paas
+		○ Saas
+		○ The three models define where the customer and provider areas of responsibility are and at what level the customer gains access
+		○ The three models build on top of one another
+		
+	Infrastructure as a Service
+			§ The capability provided to the consumer is to provision processing, storage, network and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications.
+			§ The customer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage and deployed applications and possibly limited control of select networking components. Ex : Host firewalls
+			§ Cloud providers will often offer three distinct flavours of Iaas compute
+				□ VM on shared physical servers
+					® Different customers can have their VM on the same shared underlying physical servers
+					® Least expensive 
+					® Least amount of options in terms of how many CPUs, RAM and Storage
+					® It can usually be provisioned more quickly than the dedicated options
+					® Most commonly deployed options
+				□ VM on dedicated physical servers
+					® A customer is guaranteed that the underlying physical server is dedicated to them 
+					® This is substantially more expensive option
+					® More options in terms of how many CPUs, RAM and storage
+					® The customer may be required to sign a minimum length contract
+				□ Dedicated bare-metal physical servers
+					® Customer is given access to their own physical servers
+					® A hypervisor is not installed and managed by the cloud provider
+					® The customer can either install an OS directly on the server, or can install and manage their own hypervisor
+					® Most expensive option 
+					® Most options in terms of how many CPUs, RAM and storage
+					® Customer may be required to sign a minimum length contract
+					® AWS do not offer this option
+					
+			§ Customers can mix and match between the three types
+			
+	Platform as a service 
+		
+			§ The capability to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services and tools supported by the provider
+			§ The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems or storage but has control over the deployed applications and possible configuration settings for the application-hosting environment
+			§ EX : AWS Elastic beanstalk  , Google apps, IBM Bluemix
+			§ Paas will typically be billed based on memory usage
+		
+	Software as a service
+		
+			§ The capability of consumer is to use the provider's application running on a cloud infrastructure. 
+			§ The applications are accessible from various client devices through either a thin client interface such as web browser. Ex Web based email or a program interface.
+			§ The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage or even individual applications capabilities with the possible exception of limited user-specific application configuration settings
+			§ Ex : MS 365, Gmail
+			§ Billing will typically have a monthly fee per user
+		
+	Anything as a service
+	
+		○ BaaS - Backup as a Service
+			§ Data is backed up from company office to storage at cloud providers
+		○ DRaas - Disaster Recovery as a Service
+			§ This is an active/standby model
+			§ The customer has a traditional on prem deployment with minimal infrastructure provisioned at a cloud provider
+			§ Data is replicated from company office to cloud provider storage
+			§ Infrastructure can be quickly provisioned at cloud providers if customer experiences disaster at company office 
+		○ DaaS - Desktop as a Service
+			§ Implementation of Virtual Desktop Infrastructure where the VDI server infrastructure is hosted by the cloud provider
+		○ Saas - Storage as a Service
+			§ Ex - Amazon S2, Dropbox, MS One drive, Google Drive
+	
+Cloud Deployment Models
+	
+		○ Public Cloud 
+			§ The cloud infrastructure is provisioned for open use by the general public
+			§ It may be owned, managed and operated by the business, academic or government organizations or some combination of them 
+			§ It exists on the premises of the cloud provider
+			§ Ex: AWS, Microsoft Azure, IBM Bluemix
+			§ Most common deployment model
+		○ Private Cloud 
+			§ The cloud infrastructure is provisioned for exclusive use by a single organization comprising multiple consumers. 
+			§ It may be owned, managed, and operated by the organization, a third party or some combination of them 
+			§ It may exist on or off premises
+			§ It works same way as public cloud but the services are provided to internal business units instead of to external public enterprises
+			§ It fulfils the cloud essential characteristics
+			§ How is Private cloud differ than On prem
+				□ On prem - A business unit orders a new server by  raising a ticket to IT department. The server is then provisioned and configured by the server, network and storage teams as separate manual process
+				□ Private Cloud - A business unit orders a new server typically through a web portal. Then server is then completely automatically provisioned without acquiring manual intervention
+				□ It is most suitable for large companies where the long term ROI and efficiency gains outweigh the initial effort and cost to set up the infrastructure and automated workflows
+				
+		○ Community Cloud 
+			§ The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organisation that have shared concerns like mission, security requirements, policy and compliance considerations
+			§ It may owned, managed and operated by one or more of the organizations in community, a third party or some combination of them and it may exist on or off premises
+			§ It is similar to traditional extranet but with full shared data center services instead of just network connectivity between on premises services
+		○ Hybrid Cloud
+			§ The cloud infrastructure is composition of two or more distinct cloud infrastructure that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability
+			§ A company could also have private cloud at their main site use public cloud for their DR location
+	
+	
+	Advantage of Cloud Computing
+		
+			§ Scalability
+				□ Cloud computing provides business with the ability to regulate the service in accordance with their current requirements
+				□ Scale capacity up and down as needed
+				□ Infinite computing capacity on demand
+				□ Flexibility through cloud bursting
+			§ Business agility
+				□ Ability to handle expected or unexpected changes in load
+				□ Reduce time to deploy an app into prod
+			§ Cost Efficiency 
+				□ The customer pays just for what they need, resulting in directly proportional costs
+				□ The customer avoids provisioning for the peak as a permanent fixture
+				□ Move from a large upfront capital expenditure cost to comparatively small monthly Operational expenditure
+				□ ICT costs are more transparent to the business
+				□ The customer does not have depreciable hardware assets
+				□ Technology refresh is the responsibility of the cloud provider
+				□ The provider passes hardware maintenance costs onto the customer as part of the predictable monthly fee, there are no unexpected costs
+			§ Competitive advantage
+				□ Organisation can respond quickly to evolving market trends and focus on growing their core business
+				□ Reducing capital spent on infrastructure releases funds to invest in innovation or other priority areas
+			§ Productivity
+				□ It staff can focus more on strategic decisions and developing and improving core applications rather than maintaining or troubleshooting in house ICT
+			§ Availability and Reliability
+				□ All major cloud providers facilities are located in hardened data centers with redundant power, no single points of failure and onsite security
+				□ The data center is built by facilities, server, networking and storage qualified specialists according to best practices
+				□ Check the SLA to see what is guaranteed and the compensation if the SLA is not met
+			§ Cost
+				
